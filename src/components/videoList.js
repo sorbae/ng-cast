@@ -1,4 +1,3 @@
-angular.module('video-player')
-.component('videoList', {
-  // TODO
+angular.module('video-player').component('videoList', {
+  templateUrl: 'src/templates/videoList.html'
 });
