@@ -1,3 +1,7 @@
-angular.module('video-player').component('search', {
-  templateUrl: 'src/templates/search.html'
-});
+angular.module('video-player')
+  .component('search', {
+    bindings: {
+      query: '<'
+    },
+    templateUrl: 'src/templates/search.html'
+  });
