@@ -29,6 +29,7 @@ body {
   background: #f8f8f8;
   width: 20%;
   margin-left: -1px;
+  cursor: pointer;
 }
 
 .search-bar .btn:hover {
@@ -88,4 +89,8 @@ h5 {
   border: 2px solid red;
   text-align: center;
   padding: 10px;
+}
+
+.media-object {
+  cursor: pointer;
 }

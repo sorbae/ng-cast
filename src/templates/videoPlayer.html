@@ -1,9 +1,10 @@
 <div class="video-player">
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" ng-src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId}}" allowFullScreen></iframe>
+    <div ng-if="!$ctrl.video">Please wait</div>
+    <iframe ng-if="$ctrl.video" class="embed-responsive-item" ng-src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId}}" allowFullScreen></iframe>
   </div>
   <div class="video-player-details">
     <h3>{{$ctrl.video.snippet.title}}</h3>
-    <div>{{$ctrl.video.snippet.description}}</div>
+    <div><!-- {{$ctrl.video.snippet.description}} -->A half pony half wookie wanders into a farmer's market on a cool winter's morning. He meets a unicorn and spends 3 hours polishing its horn, before going home for a cold shower and a can of proverbial worms.</div>
   </div>
 </div>
