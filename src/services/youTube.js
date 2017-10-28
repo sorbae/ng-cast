@@ -1,6 +1,6 @@
 angular.module('video-player')
   .service('youTube', function($http) {
-    this.search = function(query, callback) {
+    this.search = _.throttle(function(query, callback) {
       let params = {
         type: 'video',
         videoEmbeddable: 'true',
@@ -20,5 +20,5 @@ angular.module('video-player')
       }, function(data) {
         console.log('fail', data);
       });
-    };
+    }, 2000);
   });
